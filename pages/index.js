@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 export default function Home({ allPosts }) {
   const posts = allPosts
+  console.log(posts.content)
   return (
     <>
     <Layout>

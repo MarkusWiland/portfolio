@@ -6,7 +6,6 @@ import PostHeader from '../../components/PostHeader'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostBody from '../../components/PostBody'
 export default function Post({post, morePosts}) {
-  console.log(post)
     const router = useRouter()
     if(!router.isFallback && !post?.slug){
         return <ErrorPage statusCode={404} />
