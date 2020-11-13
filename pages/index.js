@@ -16,6 +16,7 @@ export default function Home({ allPosts }) {
       </Head>
 
       <main className={styles.main}>
+        {process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
 {posts && posts.map((post) => (
   <PostList key={post._id} author={post.author} coverImage={post.coverImage} excerpt={post.excerpt} date={post.date} title={post.title} slug={post.slug}/>
 ))}
