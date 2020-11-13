@@ -31,7 +31,7 @@ export default function Home({ allPosts }) {
   </div>
 </div>
       <main className={styles.main}>
-      <h2 className="h2">All post<a href="#" className="home__anchor">blogs</a></h2>
+      <h2 className="h2">Tre senaste<a href="#" className="home__anchor">blogginlägg</a></h2>
 {posts && posts.map((post) => (
  
   <PostList key={post._id} author={post.author} coverImage={post.coverImage} excerpt={post.excerpt} date={post.date} title={post.title} slug={post.slug}/>
