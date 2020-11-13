@@ -1,9 +1,9 @@
 .postlist {
   margin: 0rem 0px;
-  background-color: #f3f3f3;
-  transition: transform 1s;
+  transition: transform 0.1s ease-in;
 }
 .postlist:hover {
+  transition: transform 0.3s ease-in;
   transform: translate(0px, -5px);
 }
 .postlist__container {
@@ -28,18 +28,19 @@
 .postlist__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 0.85;
 }
 
 .title {
-  margin: 0;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .date {
   font-size: 0.6rem;
   color: grey;
 }
-
 .excerpt {
-  flex: 1;
+  font-size: large;
 }

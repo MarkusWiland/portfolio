@@ -5,7 +5,9 @@ export default function Header() {
         <div className={styles.navbar}>
         <div className={styles.navbar__navigation}>
            <header className={styles.navbar__header}>
-               <h3 className={styles.navbar__logo}>Markus <span className={styles.navbar__h2tag}>Wiland</span></h3>
+               <Link href="/">
+               <h3 className={styles.navbar__logo}>Wiland <span className={styles.navbar__media}>Media</span></h3>
+               </Link>
                <nav className={styles.navbar__nav}> 
                    <ul className={styles.navbar__ul}>
                        <Link href="/"><li className={styles.navbar__li}><a>Start</a></li></Link>

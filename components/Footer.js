@@ -1,4 +1,5 @@
 import { FaInstagram, FaTwitter, FaTwitch, FaLinkedin } from 'react-icons/fa';
+import SocialMedia from './SocialMedia';
 export default function Footer() {
     return (
         <>
@@ -8,10 +9,7 @@ export default function Footer() {
                 <div className="social__follow">
                   <p className="social__follow__text">Markus WIland</p>
                   <div className="socialMedia text-center">
-                    <div><a href="#"><FaInstagram size={30} color="#DD2A7B"/></a></div>
-      <div><a href="#"><FaTwitter size={30} color="#1DA1F2"/></a></div>
-      <div><a href="#"><FaTwitch size={30} color="#6441a5 "/></a></div>
-      <div><a href="#"><FaLinkedin size={30} color="#2867B2"/></a></div>
+                  <SocialMedia size={30} instagram={'#DD2A7B'} twitter={'#1DA1F2'} twitch={'#6441a5'} linkedin={'#2867B2'}/>
                     </div>
                 </div>
                 <p>Byggd i <a href="#" className="home__anchor">Vercel</a>med <a href="#"className="home__anchor">Sanity</a> som CMS och deployad på <a href="#" className="home__anchor">Vercel</a> </p>

@@ -1,14 +1,21 @@
 import { getAllPostsFromHome } from '../lib/api'
+import Head from 'next/head'
 import Layout from "../components/Layout"
 export default function blog({allPosts}) {
     const posts = allPosts
     return (
         <Layout>
-        <div>
+              <Head>
+        <title>Wiland Media - Blogg</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+            <h1>Blogg</h1>
+            <hr className="hr" />
+        <section className="section">
             {posts.map((post) => (
-                <h1 key={post._id}>{post.title}</h1>
+                <h2 key={post._id}>{post.title}</h2>
             ))}
-        </div>
+        </section>
         </Layout>
     )
 }

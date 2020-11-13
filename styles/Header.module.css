@@ -1,16 +1,9 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  z-index: 10;
   height: 80px;
-  top: 0;
-  position: sticky;
 }
-.navbar__active {
-  background-color: #f8f8f8;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
-  transition: 0.3s ease-in-out;
-}
+
 .navbar__navigation {
   display: flex;
   height: 100%;
@@ -45,14 +38,16 @@
   transition: all 0.2s ease-in;
 }
 .navbar__li > a:hover {
-  color: green;
+  color: var(--brand);
   text-decoration: underline;
 }
 .navbar__logo {
   font-size: 2rem;
-  font-family: 'Ruluko', Courier, monospace;
-  font-weight: 400;
+  font-weight: 900;
+  font-size: 3rem;
+  cursor: pointer;
+  text-decoration: underline var(--brandHover);
 }
-.navbar__h2tag {
-  color: #4183c4;
+.navbar__media {
+  color: var(--brand);
 }

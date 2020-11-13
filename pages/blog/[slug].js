@@ -26,10 +26,12 @@ export default function Post({post, morePosts}) {
                     title={post.title}
                     coverImage={post.coverImage}
                     date={post.date}
+                    excerpt={post.excerpt}
                     />
-                    <PostBody content={post.body} className={styles.postBody}/>
+                    <div className={styles.postBody}>
+                    <PostBody content={post.body}/>
+                    </div>
                     <PostFooter author={post.author}/>
-                      
                       {morePosts.length > 0 &&  <MoreStories posts={morePosts} />}
                 </div>
             )}
