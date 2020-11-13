@@ -1,0 +1,14 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.avatar > img {
+  width: 100px;
+}
+
+.avatar > p {
+  font-size: 2rem;
+}

@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <Container>
     <Header />
       <div className={styles.container}>
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
       </div>
       <Footer />
       </Container>

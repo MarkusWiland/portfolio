@@ -1,0 +1,39 @@
+.postlist {
+  margin: 1rem 0px;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+.bloggpost {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+.coverImage {
+  width: 130px;
+}
+.postlist__image {
+  display: flex;
+  align-items: center;
+  flex: 0.15;
+}
+.postlist__content {
+  display: flex;
+  flex-direction: column;
+  flex: 0.85;
+}
+
+.title {
+  cursor: pointer;
+  margin: 0;
+}
+
+.date {
+  font-size: 0.6rem;
+  color: grey;
+}
+
+.excerpt {
+  flex: 1;
+}

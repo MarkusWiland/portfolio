@@ -1,7 +1,17 @@
 export default function Footer() {
     return (
-        <div>
+        <footer className="footer">
             <h1>footer</h1>
-        </div>
+    <style jsx>{`
+    .footer {
+        width: 100%;
+        height: 150px;
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    `}</style>
+        </footer>
     )
 }

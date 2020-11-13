@@ -1,0 +1,22 @@
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+}
+
+.hero__headshot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshotImage {
+  height: 300px;
+  width: 300px;
+  padding: 0.6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}

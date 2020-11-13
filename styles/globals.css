@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Poppins&family=Roboto&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
+  font-size: 14px;
   background-color: #f9f9f9;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
 a {
   color: inherit;
   text-decoration: none;
+  color: #4183c4;
 }
 
 * {
@@ -17,8 +31,58 @@ a {
   margin: 0;
   padding: 0;
 }
+p {
+  font-size: 1rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.12rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 4rem;
+  margin: 1rem 0 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.hr {
+  border-top: 1px solid #eeeeee;
+}
 
 .section {
-  background-color: #eeeeee;
-  padding: 1rem;
+  padding: 2rem 0;
+}
+
+.home__anchor {
+  margin: 0 10px;
+  font-size: inherit;
+  border-bottom: 4px solid #4183c4;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.home__anchor:hover {
+  color: white;
+}
+
+.home__anchor:before {
+  transition: 0.3s all ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  right: 100%;
+  content: '';
+  background-color: #6196cc;
+}
+
+.home__anchor:hover::before {
+  transition: 0.3s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }

@@ -1,8 +1,9 @@
 export default function PostHeader({title, coverImage, date}) {
     return (
       <header>
-          <p>{title}</p>
+          <h1>{title}</h1>
           <p>{date}</p>
+          <img src={coverImage} />
       </header>
     )
 }
