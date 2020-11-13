@@ -6,7 +6,7 @@ export default function blog({allPosts}) {
         <Layout>
         <div>
             {posts.map((post) => (
-                <h1>{post.title}</h1>
+                <h1 key={post._id}>{post.title}</h1>
             ))}
         </div>
         </Layout>
