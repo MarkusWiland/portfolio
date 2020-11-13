@@ -3,6 +3,7 @@
   max-width: 1200px;
   width: 100%;
   display: flex;
+  padding: 2rem 0rem;
   flex-direction: column;
   margin: 0 auto;
 }

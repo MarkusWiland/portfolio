@@ -1,7 +1,14 @@
 .postlist {
-  margin: 1rem 0px;
-  padding: 1rem;
+  margin: 0rem 0px;
   background-color: #f3f3f3;
+  transition: transform 1s;
+}
+.postlist:hover {
+  transform: translate(0px, -5px);
+}
+.postlist__container {
+  padding: 1rem;
+  cursor: pointer;
 }
 .bloggpost {
   list-style: none;
@@ -9,14 +16,14 @@
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
 }
-
 .coverImage {
-  width: 130px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .postlist__image {
-  display: flex;
-  align-items: center;
-  flex: 0.15;
+  width: 300px;
+  height: 168px;
 }
 .postlist__content {
   display: flex;
@@ -25,7 +32,6 @@
 }
 
 .title {
-  cursor: pointer;
   margin: 0;
 }
 

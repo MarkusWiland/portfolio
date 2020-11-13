@@ -4,9 +4,6 @@
   align-items: center;
 }
 
-.hero__content {
-}
-
 .hero__headshot {
   display: flex;
   justify-content: center;
