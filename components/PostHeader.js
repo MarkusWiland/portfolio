@@ -12,6 +12,7 @@ export default function PostHeader({title, coverImage, date, excerpt}) {
       .coverImage {
         width: 100%;
         height: 300px;
+        object-fit: cover;
         margin: 2rem 0;
       }
       .excerpt {
