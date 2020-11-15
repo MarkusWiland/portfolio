@@ -10,6 +10,7 @@ export default function blog({ allPosts }) {
         <title>Blogg | Wiland Media</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <h3 className='text-center'>Programmer, designer, creator</h3>
       <h1>Blogg</h1>
       <hr className='hr' />
       <section className='section'>

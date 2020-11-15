@@ -13,6 +13,7 @@ export default function contact() {
         <title>Kontakta Mig | Wiland Media</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <h3 className='text-center'>Programmer, designer, creator</h3>
       <h1 className='headline'>Kontakta mig</h1>
       <hr className='hr' />
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>

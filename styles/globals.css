@@ -58,6 +58,9 @@ h4 {
   font-size: 1.6rem;
   font-weight: 700;
 }
+.text-center {
+  text-align: center;
+}
 .hr {
   border-top: 1px solid #eeeeee;
 }

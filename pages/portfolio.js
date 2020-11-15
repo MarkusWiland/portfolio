@@ -9,26 +9,25 @@ export default function portfolio({ allPosts }) {
         <title>Portfolio | Wiland Media</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <h3 className='text-center'>Programmer, designer, creator</h3>
+      <h1>Portfolio</h1>
+      <hr className='hr' />
       <section className='section'>
-        <h1>Portfolio</h1>
-        <hr className='hr' />
-        <main className='section'>
-          <div className='grid'>
-            {posts &&
-              posts.map((portfolio) => (
-                <div className='gridbox' key={portfolio._id}>
-                  <img src={portfolio.coverImage} className='gridbox__image' />
-                  <h3>{portfolio.name}</h3>
-                  <div className='gridbox__content'>
-                    <p>{portfolio.excerpt}</p>
-                    <button href={portfolio.link.href} className='button'>
-                      GÅ TILL {portfolio.link.description}
-                    </button>
-                  </div>
+        <div className='grid'>
+          {posts &&
+            posts.map((portfolio) => (
+              <div className='gridbox' key={portfolio._id}>
+                <img src={portfolio.coverImage} className='gridbox__image' />
+                <h3>{portfolio.name}</h3>
+                <div className='gridbox__content'>
+                  <p>{portfolio.excerpt}</p>
+                  <button href={portfolio.link.href} className='button'>
+                    GÅ TILL {portfolio.link.description}
+                  </button>
                 </div>
-              ))}
-          </div>
-        </main>
+              </div>
+            ))}
+        </div>
       </section>
       <style jsx scoped>
         {`
