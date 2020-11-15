@@ -1,6 +1,7 @@
 import { getAllPostsFromHome } from '../lib/api'
 import Head from 'next/head'
 import Layout from "../components/Layout"
+import PostList from '../components/PostList'
 export default function blog({allPosts}) {
     const posts = allPosts
     return (
@@ -12,9 +13,9 @@ export default function blog({allPosts}) {
             <h1>Blogg</h1>
             <hr className="hr" />
         <section className="section">
-            {posts.map((post) => (
-                <h2 key={post._id}>{post.title}</h2>
-            ))}
+        {posts && posts.map((post) => (
+  <PostList key={post._id} author={post.author} coverImage={post.coverImage} excerpt={post.excerpt} date={post.date} title={post.title} slug={post.slug}/>
+))}
         </section>
         </Layout>
     )

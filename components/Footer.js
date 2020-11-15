@@ -7,12 +7,12 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer__content">
                 <div className="social__follow">
-                  <p className="social__follow__text">Markus WIland</p>
+                  <p className="social__follow__text">@WilandMedia</p>
                   <div className="socialMedia text-center">
                   <SocialMedia size={30} instagram={'#DD2A7B'} twitter={'#1DA1F2'} twitch={'#6441a5'} linkedin={'#2867B2'}/>
                     </div>
                 </div>
-                <p>Byggd i <a href="#" className="home__anchor">Vercel</a>med <a href="#"className="home__anchor">Sanity</a> som CMS och deployad på <a href="#" className="home__anchor">Vercel</a> </p>
+                <p>Byggd i<a href="#" className="home__anchor">Vercel</a>med<a href="#"className="home__anchor">Sanity</a> som CMS och deployad på<a href="#" className="home__anchor">Vercel</a> </p>
             </div>
     <style jsx scoped>{`
     .footer {

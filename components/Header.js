@@ -1,24 +1,104 @@
 import Link from 'next/link'
-import styles from '../styles/Header.module.css'
 export default function Header() {
     return (
-        <div className={styles.navbar}>
-        <div className={styles.navbar__navigation}>
-           <header className={styles.navbar__header}>
+        <div className="navbar">
+        <div className="navbar__navigation">
+           <header className="navbar__header">
                <Link href="/">
-               <h3 className={styles.navbar__logo}>Wiland <span className={styles.navbar__media}>Media</span></h3>
+               <h3 className="navbar__logo">Wiland <span className="navbar__media">Media</span></h3>
                </Link>
-               <nav className={styles.navbar__nav}> 
-                   <ul className={styles.navbar__ul}>
-                       <Link href="/"><li className={styles.navbar__li}><a>Start</a></li></Link>
-                       <Link href="/blog"><li className={styles.navbar__li}><a>Blogg</a></li></Link>
-                       <Link href="/portfolio"><li className={styles.navbar__li}><a>Portfolio</a></li></Link>
-                       <Link href="/about"><li className={styles.navbar__li}><a>Om Mig</a></li></Link>
-                       <Link href="/contact"><li className={styles.navbar__li}><a>Kontakta Mig</a></li></Link>
+               <nav className="navbar__nav"> 
+                   <ul className="navbar__ul">
+                      <li className="navbar__li"><Link href="/"><a >Start</a></Link></li>
+                       <li className="navbar__li"><Link href="/blog"><a>Blogg</a></Link></li>
+                       <li className="navbar__li"><Link href="/portfolio"><a>Portfolio</a></Link></li>
+                      <li className="navbar__li"> <Link href="/about"><a>Om Mig</a></Link></li>
+                       <li className="navbar__li"><Link href="/contact"><a>Kontakta Mig</a></Link></li>
                    </ul>
                </nav>
            </header>
-           </div>           
+           </div>     
+           <style jsx scoped>
+    {`
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+      }
+      
+      .navbar__navigation {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+      
+      .navbar__header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .navbar__header > h3 {
+        margin: 0;
+      }
+
+      /* LINKS */ 
+      
+      .navbar__nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      .navbar__ul {
+        display: flex;
+      }
+      .navbar__li {
+        padding: 10px;
+        cursor: pointer;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+      .navbar__li > a {
+        color: black;
+        font-size: large;
+        display: inline-block;
+        position: relative;
+        transition: all 0.2s ease-in;
+      }
+  
+      .navbar__li a:after {
+        height: 3px;
+        position: absolute;
+        content: '';
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+        background-color: var(--brand);
+        width: 0;
+      }
+
+      .navbar__li a:after {
+        bottom: 0;
+        left: 0;
+      }
+      .navbar__li a:hover:after,
+      .navbar__li .active a:after {
+        width: 100%;
+      }
+
+     /* LINK */
+      .navbar__logo {
+        font-size: 2rem;
+        font-weight: 900;
+        font-size: 3rem;
+        cursor: pointer;
+      }
+      .navbar__media {
+        color: var(--brand);
+      }
+      
+    
+      
+    `}</style>      
         </div>
     )
 }

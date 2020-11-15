@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import styles from '../styles/Postlist.module.css'
-export default function PostList({author, excerpt, coverImage, date, title, slug}) {
+export default function PortfolioList({href, excerpt, coverImage, description, name, slug}) {
+    console.log(href, description)
     return (
-        <Link as={`/blog/${slug}`} href="/blog/[slug]">
+        <Link as={`/portfolio/${slug}`} href="/portfolio/[slug]">
         <div className={styles.postlist__container}>
         <div className={styles.postlist}>
         <div className={styles.bloggpost}>
@@ -10,9 +11,9 @@ export default function PostList({author, excerpt, coverImage, date, title, slug
             <img src={coverImage} className={styles.coverImage}/>
       </div>
             <div className={styles.postlist__content}>
-            <h3 className={styles.title}>{title}</h3>
+            <h3 className={styles.title}>{name}</h3>
             <p className={styles.excerpt}>{excerpt}</p>
-            <p className={styles.date}>skriven av <strong>{author.name}</strong> den {new Date(date).toLocaleDateString('sv-SV')}</p>
+            <p className={styles.excerpt}>{description}</p>        
            </div>
            </div>
            </div>

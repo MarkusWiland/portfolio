@@ -3,7 +3,7 @@ export default function MoreStories({posts}) {
     return (
         <>
         <hr className="hr" />
-        <h1 className="MoreStories__headline">Mer Inlägg</h1>
+        <h1 className="h1">Mer Inlägg</h1>
         <div className="MoreStories__post">
             {posts.map((post)=> (
                 <PostPreview key={post._id} slug={post.slug} title={post.title} excerpt={post.excerpt} coverImage={post.coverImage} date={post.date}
@@ -18,7 +18,7 @@ export default function MoreStories({posts}) {
                     grid-template-columns: repeat(2, 300px);
                     justify-content:center;
                 }
-                .MoreStories__headline {
+                .h1 {
                     text-align: center;
                 }
             `}</style>
