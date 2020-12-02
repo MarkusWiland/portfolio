@@ -1,5 +1,6 @@
 import PostPreview from '../components/PostPreview'
 export default function MoreStories({ posts }) {
+  console.log(posts)
   return (
     <>
       <hr className='hr' />
@@ -11,6 +12,8 @@ export default function MoreStories({ posts }) {
             slug={post.slug}
             title={post.title}
             excerpt={post.excerpt}
+            name={post.author.name}
+            picture={post.author.picture}
             coverImage={post.coverImage}
             date={post.date}
           />
@@ -18,9 +21,9 @@ export default function MoreStories({ posts }) {
         <style jsx scoped>{`
           .MoreStories__post {
             display: grid;
-            grid-gap: 10px;
+            grid-gap: 4rem;
             padding-top: 2rem;
-            grid-template-columns: repeat(2, 300px);
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
           }
           .h1 {

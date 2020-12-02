@@ -13,13 +13,13 @@ export default function Home({ allPosts, threeLatestPortfolios }) {
       <Layout>
         <div className={styles.container}>
           <Head>
-            <title>Wiland Media</title>
+            <title>Markus Wiland</title>
             <link rel='icon' href='/favicon.ico' />
           </Head>
           <div className={styles.hero}>
-            <div className={styles.hero__content}>
+            <div>
               <h2>Hej, jag är Markus Wiland</h2>
-              <p>
+              <p className={styles.hero__p}>
                 Jag är en driven kille som gillar att utvecklas och vill alltid lära mig nya saker. Jag studerar just nu
                 Front End Developer på IT-Högskolan i Göteborg och tar examen sommaren 2021.
               </p>

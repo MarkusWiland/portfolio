@@ -5,9 +5,9 @@ export default function Header() {
       <div className='navbar__navigation'>
         <header className='navbar__header'>
           <Link href='/'>
-            <h3 className='navbar__logo'>
-              Wiland <span className='navbar__media'>Media</span>
-            </h3>
+            <p className='navbar__logo'>
+              Markus<span className='navbar__media'>Wiland</span>
+            </p>
           </Link>
           <nav className='navbar__nav'>
             <ul className='navbar__ul'>
@@ -35,6 +35,11 @@ export default function Header() {
               <li className='navbar__li'>
                 <Link href='/contact'>
                   <a>Kontakta Mig</a>
+                </Link>
+              </li>
+              <li className='navbar__li'>
+                <Link href='/gallery'>
+                  <a>Galleri</a>
                 </Link>
               </li>
             </ul>
@@ -110,9 +115,9 @@ export default function Header() {
 
           /* LINK */
           .navbar__logo {
-            font-size: 2rem;
-            font-weight: 900;
-            font-size: 3rem;
+            font-weight: 200;
+            font-size: 1.6rem;
+            text-transform: uppercase;
             cursor: pointer;
           }
           .navbar__media {

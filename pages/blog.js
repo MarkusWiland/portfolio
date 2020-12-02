@@ -7,7 +7,7 @@ export default function blog({ allPosts }) {
   return (
     <Layout>
       <Head>
-        <title>Blogg | Wiland Media</title>
+        <title>Blogg | Markus Wiland</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h3 className='text-center'>Programmer, designer, creator</h3>

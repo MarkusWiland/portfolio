@@ -2,15 +2,21 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  width: 100%;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: rgba(238, 238, 238, 0.419);
 }
 
 .avatar > img {
-  width: 100px;
+  width: 70px;
 }
 
 .avatar > span {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
+}
+
+.name {
+  cursor: pointer;
 }

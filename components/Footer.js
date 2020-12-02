@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className='footer'>
         <div className='footer__content'>
           <div className='social__follow'>
-            <p className='social__follow__text'>@WilandMedia</p>
+            <h2 className='social__follow__text'>@MarkusWiland</h2>
             <div className='socialMedia text-center'>
               <SocialMedia
                 size={30}

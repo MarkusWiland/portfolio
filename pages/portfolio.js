@@ -1,12 +1,13 @@
 import Layout from '../components/Layout'
 import { getAllPortfolios } from '../lib/api'
 import Head from 'next/head'
+import Image from 'next/image'
 export default function portfolio({ allPosts }) {
   const posts = allPosts
   return (
     <Layout>
       <Head>
-        <title>Portfolio | Wiland Media</title>
+        <title>Portfolio | Markus Wiland</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h3 className='text-center'>Programmer, designer, creator</h3>
@@ -17,10 +18,11 @@ export default function portfolio({ allPosts }) {
           {posts &&
             posts.map((portfolio) => (
               <div className='gridbox' key={portfolio._id}>
-                <img src={portfolio.coverImage} className='gridbox__image' />
+                <Image src={portfolio.coverImage} height={200} width={300} />
                 <h3>{portfolio.name}</h3>
                 <div className='gridbox__content'>
                   <p>{portfolio.excerpt}</p>
+                  <p>Gjort med wordpress</p>
                   <button href={portfolio.link.href} className='button'>
                     GÅ TILL {portfolio.link.description}
                   </button>
@@ -52,11 +54,6 @@ export default function portfolio({ allPosts }) {
           .gridbox__content > p {
             line-height: 1.5rem;
             flex: 1;
-          }
-          .gridbox__image {
-            width: 100%;
-            object-fit: cover;
-            height: 200px;
           }
           .button {
             padding: 0.5rem;
