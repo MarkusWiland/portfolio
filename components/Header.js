@@ -39,7 +39,7 @@ export default function Header() {
               </li>
               <li className='navbar__li'>
                 <Link href='/gallery'>
-                  <a>Galleri</a>
+                  <a>Gallery</a>
                 </Link>
               </li>
             </ul>
@@ -88,7 +88,7 @@ export default function Header() {
           }
           .navbar__li > a {
             color: black;
-            font-size: large;
+            font-size: small;
             display: inline-block;
             position: relative;
             transition: all 0.2s ease-in;
@@ -116,7 +116,7 @@ export default function Header() {
           /* LINK */
           .navbar__logo {
             font-weight: 200;
-            font-size: 1.6rem;
+            font-size: 2rem;
             text-transform: uppercase;
             cursor: pointer;
           }

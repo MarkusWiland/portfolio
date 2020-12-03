@@ -1,19 +1,14 @@
 import Layout from '../components/Layout'
-import Link from 'next/link'
-import Image from 'next/image'
+import Head from 'next/head'
 import { getAllGallery } from '../lib/api'
 export default function gallery({ allGallery }) {
   console.log(allGallery)
   return (
     <Layout>
-      {/* <Link href='/'>
-          <a>
-            <div className='gallery-image'>
-              <h1 className='gallery-h1'>Markus</h1>
-              <img src='images/headshot.jpg' />
-            </div>
-          </a>
-        </Link> */}
+      <Head>
+        <title>Gallery | Markus Wiland</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <h1>Gallery</h1>
       <hr className='hr' />
       <h3>Under konstruktion</h3>

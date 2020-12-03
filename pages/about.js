@@ -145,9 +145,6 @@ export default function about() {
           .padding > h4 {
             font-size: 1.4rem;
           }
-          .p {
-            font-size: 0.7rem;
-          }
         `}
       </style>
     </Layout>

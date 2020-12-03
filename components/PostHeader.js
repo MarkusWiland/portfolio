@@ -17,7 +17,7 @@ export default function PostHeader({ title, coverImage, date, excerpt }) {
           }
           .excerpt {
             font-weight: bold;
-            font-size: larger;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
           }
           h1 {

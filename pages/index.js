@@ -18,14 +18,14 @@ export default function Home({ allPosts, threeLatestPortfolios }) {
           </Head>
           <div className={styles.hero}>
             <div>
-              <h2>Hej, jag är Markus Wiland</h2>
+              <h2>Hej, jag heter Markus Wiland</h2>
               <p className={styles.hero__p}>
                 Jag är en driven kille som gillar att utvecklas och vill alltid lära mig nya saker. Jag studerar just nu
                 Front End Developer på IT-Högskolan i Göteborg och tar examen sommaren 2021.
               </p>
               <div className='socialMedia'>
                 <SocialMedia
-                  size={40}
+                  size={30}
                   instagram={'#DD2A7B'}
                   twitter={'#1DA1F2'}
                   twitch={'#6441a5'}
