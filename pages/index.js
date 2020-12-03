@@ -25,7 +25,7 @@ export default function Home({ allPosts, threeLatestPortfolios }) {
               </p>
               <div className='socialMedia'>
                 <SocialMedia
-                  size={50}
+                  size={40}
                   instagram={'#DD2A7B'}
                   twitter={'#1DA1F2'}
                   twitch={'#6441a5'}

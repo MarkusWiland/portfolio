@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/Postlist.module.css'
 export default function PostList({ author, excerpt, coverImage, date, title, slug }) {
+  console.log(date)
   return (
     <Link as={`/blog/${slug}`} href='/blog/[slug]'>
       <div className={styles.postlist__container}>
