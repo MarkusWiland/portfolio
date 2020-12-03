@@ -8,7 +8,7 @@ export default function PostList({ author, excerpt, coverImage, date, title, slu
         <div className={styles.postlist}>
           <div className={styles.bloggpost}>
             <div className={styles.postlist__image}>
-              <img src={coverImage} className={styles.coverImage} />
+              <img src={coverImage ? coverImage : 'images/saknas.png'} className={styles.coverImage} />
             </div>
             <div className={styles.postlist__content}>
               <h3 className={styles.title}>{title}</h3>
