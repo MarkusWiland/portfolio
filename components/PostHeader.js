@@ -6,7 +6,7 @@ export default function PostHeader({ title, coverImage, date, excerpt }) {
         <h1 className='h1'>{title}</h1>
         <p>{new Date(date).toLocaleDateString('sv-SV')}</p>
         <div className='coverImage'>
-          <img src={coverImage} height='500px' width='1200px' />
+          <Image src={coverImage} alt='header picture' layout='responsive' priority={true} height={500} width={1200} />
         </div>
         <p className='excerpt'>{excerpt}</p>
       </header>
