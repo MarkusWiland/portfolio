@@ -106,13 +106,13 @@ export default function about() {
             display: grid;
             justify-content: center;
             grid-gap: 5rem;
-            grid-template-columns: repeat(3, 320px);
+            grid-template-columns: repeat(3, 1fr);
           }
           .fardigheter-h3 {
             margin: 4rem 0;
           }
           .fardigheter {
-            margin: 4rem;
+            margin: 4rem 0;
           }
           .icon-bg {
             width: 70px;
