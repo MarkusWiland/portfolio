@@ -18,14 +18,15 @@ export default function portfolio({ allPosts }) {
           {posts &&
             posts.map((portfolio) => (
               <div className='gridbox' key={portfolio._id}>
-                <Image src={portfolio.coverImage} height={200} width={300} />
+                <img src={portfolio.coverImage ? portfolio.coverImage : 'images/saknas.png'} height={200} width={300} />
                 <h3>{portfolio.name}</h3>
                 <div className='gridbox__content'>
                   <p>{portfolio.excerpt}</p>
                   <p>Gjort med wordpress</p>
-                  <button href={portfolio.link.href} className='button'>
-                    GÅ TILL {portfolio.link.description}
-                  </button>
+                  <p>{portfolio.link.href}</p>
+                  <span className='button'>
+                    GÅ TILL <a href={`${portfolio.link.href}`}>{portfolio.link.description}</a>
+                  </span>
                 </div>
               </div>
             ))}
@@ -35,7 +36,7 @@ export default function portfolio({ allPosts }) {
         {`
           .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, 280px);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
 
             justify-content: center;
@@ -58,8 +59,13 @@ export default function portfolio({ allPosts }) {
           .button {
             padding: 0.5rem;
             width: 100%;
+            text-align: center;
+            border: 1px solid #000000;
             margin-top: 1rem;
             cursor: pointer;
+          }
+          .button > a {
+            text-transform: uppercase;
           }
         `}
       </style>

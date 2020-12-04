@@ -145,6 +145,32 @@ export default function about() {
           .padding > h4 {
             font-size: 1.4rem;
           }
+          @media screen and (max-width: 375px) {
+            .container {
+              flex-direction: column;
+            }
+            .info {
+              order: 2;
+            }
+            .imageContent {
+              order: 1;
+            }
+            .grid {
+              display: grid;
+              justify-content: center;
+              grid-gap: 5rem;
+              grid-template-columns: repeat(2, 1fr);
+            }
+            .icon-bg {
+              width: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 30px;
+              background-color: #eee;
+            }
+          }
         `}
       </style>
     </Layout>

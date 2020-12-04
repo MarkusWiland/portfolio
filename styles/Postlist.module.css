@@ -46,3 +46,17 @@
 .postlist__container:first-of-type {
   margin-top: 2rem;
 }
+@media screen and (max-width: 375px) {
+  .bloggpost {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .h2 {
+    text-align: center;
+  }
+  .postlist__image {
+    width: 100%;
+  }
+}

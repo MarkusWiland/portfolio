@@ -17,21 +17,21 @@ export default function Home({ allPosts, threeLatestPortfolios }) {
             <link rel='icon' href='/favicon.ico' />
           </Head>
           <div className={styles.hero}>
-            <div>
-              <h2>Hej, jag heter Markus Wiland</h2>
-              <p className={styles.hero__p}>
-                Jag är en driven kille som gillar att utvecklas och vill alltid lära mig nya saker. Jag studerar just nu
-                Front End Developer på IT-Högskolan i Göteborg och tar examen sommaren 2021.
-              </p>
-              <div className='socialMedia'>
-                <SocialMedia
-                  size={30}
-                  instagram={'#DD2A7B'}
-                  twitter={'#1DA1F2'}
-                  twitch={'#6441a5'}
-                  linkedin={'#2867B2'}
-                />
-              </div>
+            <h2>Hej, jag heter Markus Wiland</h2>
+            <p className={styles.hero__p}>
+              Jag är en driven kille som gillar att utvecklas och vill alltid lära mig nya saker. Jag studerar just nu
+              Front End Developer på IT-Högskolan i Göteborg och tar examen sommaren 2021.
+            </p>
+
+            <div className='socialMedia'>
+              <SocialMedia
+                size={30}
+                instagram={'#DD2A7B'}
+                twitter={'#1DA1F2'}
+                twitch={'#6441a5'}
+                linkedin={'#2867B2'}
+                className='socialMedia'
+              />
             </div>
             <div className={styles.hero__headshot}>
               <img src='/images/headshot.jpg' alt='logo' className={styles.headshotImage} />

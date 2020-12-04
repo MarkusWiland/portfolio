@@ -29,6 +29,11 @@ export default function MoreStories({ posts }) {
           .h1 {
             text-align: center;
           }
+          @media screen and (max-width: 375px) {
+            .MoreStories__post {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
         `}</style>
       </div>
     </>

@@ -123,6 +123,20 @@ export default function Header() {
           .navbar__media {
             color: var(--brand);
           }
+          @media screen and (max-width: 375px) {
+            .navbar__header {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .navbar__logo {
+              font-size: x-large;
+              margin: 1rem 0;
+            }
+            .navbar__li > a {
+              font-size: smaller;
+            }
+          }
         `}
       </style>
     </div>

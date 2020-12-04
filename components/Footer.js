@@ -1,4 +1,3 @@
-import { FaInstagram, FaTwitter, FaTwitch, FaLinkedin } from 'react-icons/fa'
 import SocialMedia from './SocialMedia'
 export default function Footer() {
   return (
@@ -7,7 +6,7 @@ export default function Footer() {
       <footer className='footer'>
         <div className='footer__content'>
           <div className='social__follow'>
-            <h2 className='social__follow__text'>@MarkusWiland</h2>
+            <h2 className='social__follow__text'>@ markuswiland.se</h2>
             <div className='socialMedia text-center'>
               <SocialMedia
                 size={30}
@@ -20,17 +19,17 @@ export default function Footer() {
           </div>
           <p>
             Byggd i
-            <a href='#' className='home__anchor'>
-              Vercel
+            <a href='https://nextjs.org/' className='home__anchor'>
+              Next.js
             </a>
             med
-            <a href='#' className='home__anchor'>
+            <a href='https://www.sanity.io/' className='home__anchor'>
               Sanity
-            </a>{' '}
+            </a>
             som CMS och deployad på
-            <a href='#' className='home__anchor'>
+            <a href='https://vercel.com/' className='home__anchor'>
               Vercel
-            </a>{' '}
+            </a>
           </p>
         </div>
         <style jsx scoped>{`
@@ -50,6 +49,11 @@ export default function Footer() {
           }
           .text-center {
             justify-content: center;
+          }
+          @media screen and (max-width: 375px) {
+            .footer__content > p:first-of-type {
+              text-align: center;
+            }
           }
         `}</style>
       </footer>

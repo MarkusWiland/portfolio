@@ -121,3 +121,17 @@ h4 {
   opacity: 1;
   z-index: -1;
 }
+
+@media screen and (max-width: 375px) {
+  .socialMedia {
+    order: 3;
+  }
+  .h2 {
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 768px) {
+  .socialMedia {
+    order: 3;
+  }
+}

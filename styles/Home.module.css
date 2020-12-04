@@ -21,3 +21,45 @@
 .hero__p {
   font-size: larger;
 }
+
+@media screen and (max-width: 375px) {
+  .hero {
+    flex-direction: column;
+    display: flex;
+  }
+  .hero > h2 {
+    text-align: center;
+  }
+  .hero__headshot {
+    margin: 0;
+    order: 1;
+  }
+  .hero__p {
+    order: 2;
+    margin: 2rem 0;
+  }
+  .socialMedia {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    display: flex;
+  }
+  .hero > h2 {
+    text-align: center;
+  }
+  .hero__headshot {
+    margin: 0;
+    order: 1;
+  }
+  .hero__p {
+    order: 2;
+    margin: 2rem 0;
+  }
+  .socialMedia {
+    order: 3;
+  }
+}
