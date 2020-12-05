@@ -60,3 +60,17 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .bloggpost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .h2 {
+    text-align: center;
+  }
+  .postlist__image {
+    width: 100%;
+  }
+}

@@ -137,6 +137,34 @@ export default function Header() {
               font-size: smaller;
             }
           }
+          @media screen and (max-width: 414px) {
+            .navbar__header {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .navbar__logo {
+              font-size: x-large;
+              margin: 1rem 0;
+            }
+            .navbar__li > a {
+              font-size: smaller;
+            }
+          }
+          @media screen and (max-width: 768px) {
+            .navbar__header {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .navbar__logo {
+              font-size: x-large;
+              margin: 1rem 0;
+            }
+            .navbar__li > a {
+              font-size: x-larger;
+            }
+          }
         `}
       </style>
     </div>
