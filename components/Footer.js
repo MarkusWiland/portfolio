@@ -50,7 +50,7 @@ export default function Footer() {
           .text-center {
             justify-content: center;
           }
-          @media screen and (max-width: 375px) {
+          @media screen and (max-width: 1000px) and (min-width: 375px) {
             .footer__content > p:first-of-type {
               text-align: center;
             }
