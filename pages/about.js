@@ -155,6 +155,15 @@ export default function about() {
             .imageContent {
               order: 1;
             }
+            .items {
+              align-items: center;
+              justify-content: center;
+            }
+            .padding {
+              padding-top: 1rem;
+              padding-left: 0rem;
+              text-align: center;
+            }
             .grid {
               display: grid;
               justify-content: center;
