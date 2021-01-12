@@ -171,6 +171,58 @@ export default function about() {
               background-color: #eee;
             }
           }
+          @media screen and (max-width: 414px) {
+            .container {
+              flex-direction: column;
+            }
+            .info {
+              order: 2;
+            }
+            .imageContent {
+              order: 1;
+            }
+            .grid {
+              display: grid;
+              justify-content: center;
+              grid-gap: 5rem;
+              grid-template-columns: repeat(2, 1fr);
+            }
+            .icon-bg {
+              width: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 30px;
+              background-color: #eee;
+            }
+          }
+          @media screen and (max-width: 650px) {
+            .container {
+              flex-direction: column;
+            }
+            .info {
+              order: 2;
+            }
+            .imageContent {
+              order: 1;
+            }
+            .grid {
+              display: grid;
+              justify-content: center;
+              grid-gap: 5rem;
+              grid-template-columns: repeat(2, 1fr);
+            }
+            .icon-bg {
+              width: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 30px;
+              background-color: #eee;
+            }
+          }
         `}
       </style>
     </Layout>
