@@ -1,4 +1,4 @@
-import Link from '../components/Link'
+import Link from 'next/link'
 export default function Header() {
   return (
     <div className='navbar'>
@@ -19,6 +19,11 @@ export default function Header() {
               <li className='navbar__li'>
                 <Link href='/blog'>
                   <a>Blogg</a>
+                </Link>
+              </li>
+              <li className='navbar__li'>
+                <Link href='/intervjuer'>
+                  <a>Intervjuer</a>
                 </Link>
               </li>
               <li className='navbar__li'>

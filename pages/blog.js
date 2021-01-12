@@ -14,18 +14,20 @@ export default function blog({ allPosts }) {
       <h1>Blogg</h1>
       <hr className='hr' />
       <section className='section'>
-        {posts &&
-          posts.map((post) => (
-            <PostList
-              key={post._id}
-              author={post.author}
-              coverImage={post.coverImage}
-              excerpt={post.excerpt}
-              date={post.date}
-              title={post.title}
-              slug={post.slug}
-            />
-          ))}
+        <div className='flex'>
+          {posts &&
+            posts.map((post) => (
+              <PostList
+                key={post._id}
+                author={post.author}
+                coverImage={post.coverImage}
+                excerpt={post.excerpt}
+                date={post.date}
+                title={post.title}
+                slug={post.slug}
+              />
+            ))}
+        </div>
       </section>
     </Layout>
   )
